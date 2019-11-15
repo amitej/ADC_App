@@ -22,7 +22,7 @@ import adc.adc_app.R;
 import adc.adc_app.ui.login.LoginViewModel;
 import adc.adc_app.ui.login.LoginViewModelFactory;
 
-public class SignUpPage extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
 
