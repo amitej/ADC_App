@@ -7,6 +7,21 @@
     tools:context=".DoulaQuestionsActivity">
 
     <TextView
+        android:id="@+id/doulaQ2"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Would you like your doula to make a home visit after delivery? (within 2-14 days following delivery)"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doulaQuestions"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <TextView
         android:id="@+id/doulaQuestions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
