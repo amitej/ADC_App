@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ADC_App</string>
+    <string name="request_doula">REQUEST A DOULA</string>
+    <string name="apply_as_doula">APPLY AS A DOULA</string>
 </resources>
