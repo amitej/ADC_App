@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurrentBirthInfoActivity">
+
+    <!--        app:layout_constraintBottom_toTopOf="@+id/doulaQ1"-->
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    <!--        app:layout_constraintTop_toBottomOf="@+id/doulaQuestions"--><![CDATA[
+    app:layout_constraintVertical_bias="0.05" />
+
+
+
+
+
+
+
+    ]]>
+
+    <TextView
+        android:id="@+id/currentBirthInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="@string/current_birth_information"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <LinearLayout
+        android:id="@+id/fillbar1"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/yellow"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentBirthInfo"
+        app:layout_constraintVertical_bias="0.033">
+
+        <LinearLayout
+            android:id="@+id/fillstatus1"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:background="@color/skyBlue"
+            android:backgroundTint="@color/skyBlue"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <!--        app:layout_constraintBottom_toTopOf="@+id/doulaQ1"-->
+    app:layout_constraintEnd_toEndOf="@+id/fillbar1"
+    app:layout_constraintStart_toStartOf="@+id/fillbar1"
+    <!--        //app:layout_constraintTop_toBottomOf="@+id/doulaQuestions"-->
+    app:layout_constraintVertical_bias="0.05"
+    app:layout_constraintHorizontal_bias="0.0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,4 +10,5 @@
     <string name="doula_q1">Would you like to meet your doula in person before delivery?</string>
     <string name="doula_questions">Doula Questions</string>
     <string name="doula_q2">Would you like your doula to make a home visit after delivery? (within 2-14 days following delivery)</string>
+    <string name="current_birth_information">Current Birth Information</string>
 </resources>

@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.05" />
 
     <LinearLayout
-        android:id="@+id/fillstatus"
+        android:id="@+id/fillstatus2"
         android:layout_width="240dp"
         android:layout_height="5dp"
         android:layout_marginTop="12dp"
@@ -42,6 +42,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
         android:text="@string/doula_q2"
+        android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -72,6 +73,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
         android:text="@string/doula_q1"
+        android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
