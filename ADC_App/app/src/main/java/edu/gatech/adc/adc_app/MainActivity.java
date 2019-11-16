@@ -25,4 +25,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DoulaQuestionsActivity.class);
         startActivity(intent);
     }
+
+    // only adding this to see what my page looks like on the phone
+//    private void openDoulaQuestionsActivity() {
+//        Intent intent = new Intent(this, CurrentBirthInfoActivity.class);
+//        startActivity(intent);
+//    }
 }

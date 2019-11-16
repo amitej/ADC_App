@@ -7,9 +7,23 @@
     <string name="maybe">MAYBE</string>
     <string name="prev">PREVIOUS</string>
     <string name="next">NEXT</string>
+
+<!--    DOULA QUESTIONS PAGE-->
     <string name="doula_q1">Would you like to meet your doula in person before delivery?</string>
     <string name="doula_questions">Doula Questions</string>
     <string name="doula_q2">Would you like your doula to make a home visit after delivery? (within 2-14 days following delivery)</string>
+
+<!--    CURRENT BIRTH INFORMATION PAGE-->
     <string name="current_birth_information">Current Birth Information</string>
     <string name="birthdate">Birthday (MM/DD/YYYY)</string>
+    <string name="birth_location">Planned Birth Location</string>
+    <string name="ifOther">If other, enter name here</string>
+    <string name="birthType">Birth Type: </string>
+    <string name="singleton">Singleton </string>
+    <string name="twins">Twins </string>
+    <string name="three_or_more">3 or more </string>
+    <string name="current_birth_q1">Are you planning to have/do you want to have an epidural?</string>
+    <string name="current_birth_q2">Are you expecting to have a cesarean sections (C-section)?</string>
+
+
 </resources>
