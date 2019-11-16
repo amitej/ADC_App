@@ -41,12 +41,11 @@
         android:layout_width="356dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
-        android:text="Would you like your doula to make a home visit after delivery? (within 2-14 days following delivery)"
+        android:text="@string/doula_q2"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doulaQuestions"
         app:layout_constraintVertical_bias="0.447" />
@@ -56,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_medium"
-        android:text="Doula Questions"
+        android:text="@string/doula_questions"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -70,14 +69,13 @@
     <TextView
         android:id="@+id/doulaQ1"
         android:layout_width="356dp"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/roboto"
-        android:text="Would you like to meet your doula in person before delivery?"
+        android:text="@string/doula_q1"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doulaQuestions"
         app:layout_constraintVertical_bias="0.113" />
@@ -88,10 +86,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/doulaQ2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doulaQ1"
-        app:layout_constraintVertical_bias="0.36"
+        app:layout_constraintVertical_bias="0.45"
         app:singleSelection="true">
 
         <com.google.android.material.button.MaterialButton
@@ -108,7 +105,6 @@
             android:layout_height="wrap_content"
             android:text="@string/no" />
 
-
     </com.google.android.material.button.MaterialButtonToggleGroup>
 
 
@@ -118,10 +114,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doulaQ2"
-        app:layout_constraintVertical_bias="0.11"
+        app:layout_constraintVertical_bias="0.15"
         app:singleSelection="true">
 
         <com.google.android.material.button.MaterialButton
@@ -137,7 +132,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/no" />
-
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
 

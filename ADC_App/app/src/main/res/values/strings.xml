@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ADC_App</string>
+    <string name="app_name">ADC App</string>
     <string name="request_doula">REQUEST A DOULA</string>
     <string name="apply_as_doula">APPLY AS A DOULA</string>
     <string name="yes">YES</string>
@@ -7,4 +7,7 @@
     <string name="maybe">MAYBE</string>
     <string name="prev">PREVIOUS</string>
     <string name="next">NEXT</string>
+    <string name="doula_q1">Would you like to meet your doula in person before delivery?</string>
+    <string name="doula_questions">Doula Questions</string>
+    <string name="doula_q2">Would you like your doula to make a home visit after delivery? (within 2-14 days following delivery)</string>
 </resources>
