@@ -3,9 +3,25 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/mediumBlue</item>
+        <item name="colorPrimaryDark">@color/emoryBlue</item>
+        <item name="colorAccent">@color/emoryBlue</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
 
+
+    <!-- style for the action bar backgrounds -->
+    <style name="MyActionBar" parent="@style/Widget.MaterialComponents.ActionBar.Primary">
+        <item name="android:background">@color/mediumBlue</item>
+        <item name="background">@color/mediumBlue</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <!-- Text -->
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    
 </resources>
