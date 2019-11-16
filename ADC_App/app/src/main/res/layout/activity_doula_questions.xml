@@ -6,6 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".DoulaQuestionsActivity">
 
+
+    <LinearLayout
+        android:id="@+id/fillbar"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/yellow"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/doulaQ1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doulaQuestions"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <LinearLayout
+        android:id="@+id/fillstatus"
+        android:layout_width="240dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/skyBlue"
+        android:backgroundTint="@color/skyBlue"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/doulaQ1"
+        app:layout_constraintEnd_toEndOf="@+id/fillbar"
+        app:layout_constraintStart_toStartOf="@+id/fillbar"
+        app:layout_constraintTop_toBottomOf="@+id/doulaQuestions"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
     <TextView
         android:id="@+id/doulaQ2"
         android:layout_width="356dp"
@@ -32,10 +62,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.058" />
 
     <TextView
         android:id="@+id/doulaQ1"
@@ -61,7 +91,7 @@
         app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/doulaQ1"
-        app:layout_constraintVertical_bias="0.26"
+        app:layout_constraintVertical_bias="0.36"
         app:singleSelection="true">
 
         <com.google.android.material.button.MaterialButton
