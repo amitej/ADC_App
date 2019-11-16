@@ -18,7 +18,24 @@
 
 
 
+
+
     ]]>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/birth_info_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/next"
+        app:backgroundTint="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/prev_button"
+        app:layout_constraintTop_toBottomOf="@+id/doulaQ2Buttons"
+        app:layout_constraintVertical_bias="0.733" />
 
     <TextView
         android:id="@+id/currentBirthInfo"
@@ -35,6 +52,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.044" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/birth_info_prev_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="@string/prev"
+        app:backgroundTint="@color/emoryBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doulaQ2Buttons"
+        app:layout_constraintVertical_bias="0.733" />
 
     <LinearLayout
         android:id="@+id/fillbar1"
@@ -58,6 +89,38 @@
             android:backgroundTint="@color/skyBlue"
             android:orientation="vertical" />
     </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/birth-info_scroll"
+        android:layout_width="409dp"
+        android:layout_height="624dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fillbar1"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/birthdate"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
 
     <!--        app:layout_constraintBottom_toTopOf="@+id/doulaQ1"-->
     app:layout_constraintEnd_toEndOf="@+id/fillbar1"

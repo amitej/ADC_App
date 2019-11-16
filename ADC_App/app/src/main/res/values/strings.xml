@@ -11,4 +11,5 @@
     <string name="doula_questions">Doula Questions</string>
     <string name="doula_q2">Would you like your doula to make a home visit after delivery? (within 2-14 days following delivery)</string>
     <string name="current_birth_information">Current Birth Information</string>
+    <string name="birthdate">Birthday (MM/DD/YYYY)</string>
 </resources>
