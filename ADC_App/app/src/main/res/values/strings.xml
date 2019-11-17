@@ -24,6 +24,9 @@
     <string name="three_or_more">3 or more </string>
     <string name="current_birth_q1">Are you planning to have/do you want to have an epidural?</string>
     <string name="current_birth_q2">Are you expecting to have a cesarean sections (C-section)?</string>
+    <string name="request_sent">Request Sent!</string>
+    <string name="your_request_has_been_sent_staff_at_the_emory_university_urban_health_initiative_will_match_you_with_the_doula_best_for_you_expect_to_hear_from_your_doula_within_a_few_days">Your request has been sent! Staff at the Emory University Urban Health Initiative will match you with the doula best for you. Expect to hear from your doula within a few days.</string>
+    <string name="return_home">RETURN HOME</string>
 
     <!-- PREVIOUS BIRTH INFO PAGE -->
     <string name="previous_birth_info">Previous Birth Information</string>
