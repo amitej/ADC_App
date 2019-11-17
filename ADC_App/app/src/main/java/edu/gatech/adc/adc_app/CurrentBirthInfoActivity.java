@@ -2,9 +2,12 @@ package edu.gatech.adc.adc_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+
+import com.google.android.material.button.MaterialButton;
 
 public class CurrentBirthInfoActivity extends AppCompatActivity  {
 
@@ -18,6 +21,14 @@ public class CurrentBirthInfoActivity extends AppCompatActivity  {
                 R.array.planned_birth_locations, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         birthLocations.setAdapter(adapter);
+
+        MaterialButton previousBirthActivity = findViewById(R.id.next_button_cur_birth_info);
+        previousBirthActivity.setOnClickListener(view -> openPreviousBirthInfoActivity());
         //String location = birthLocations.getSelectedItem().toString();
+    }
+
+    private void openPreviousBirthInfoActivity() {
+        Intent intent = new Intent(this, PreviousBirthInfoActivity.class);
+        startActivity(intent);
     }
 }

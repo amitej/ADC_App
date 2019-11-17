@@ -11,7 +11,7 @@
     <!--    DOULA QUESTIONS PAGE-->
     <string name="doula_q1">Would you like to meet your doula in person before delivery?</string>
     <string name="doula_questions">Doula Questions</string>
-    <string name="doula_q2">Would you like your doula to make a home visit after delivery? (within 2-14 days following delivery)</string>
+    <string name="doula_q2">Would you like your doula to make a home visit after delivery? (within 2 to 14 days following delivery)</string>
 
     <!--    CURRENT BIRTH INFORMATION PAGE-->
     <string name="current_birth_information">Current Birth Information</string>
@@ -28,11 +28,15 @@
     <!-- PREVIOUS BIRTH INFO PAGE -->
     <string name="previous_birth_info">Previous Birth Information</string>
     <string name="prev_births_1">Number of Previous Births: </string>
-    <string name="prev_births_2">Were any of your previous births: </string>
-    <string name="preterm">Preterm (less than 37 weeks gestation)</string>
-    <string name="low_birth_weight">Low Birth Weight (less than 5lbs 8oz)</string>
+    <string name="prev_births_2">Were any of your previous live births: </string>
+    <string name="preterm">Preterm (less than 37 weeks gestation):</string>
+    <string name="low_birth_weight">Low Birth Weight (less than 5lbs 8oz):</string>
     <string name="previous_birth_types">Previous Birth Types (check all that apply)</string>
+    <string name="vaginal_births">Vaginal Births</string>
+    <string name="cesarean">Cesarean</string>
+    <string name="vbac">Vaginal Birth after C-Section (VBAC)</string>
     <string name="previous_twins_triplets">Have you previously had twins or triplets?</string>
+
 
     <!--    PHOTO RELEASE PAGE-->
     <string name="photo_release">Photo Release</string>

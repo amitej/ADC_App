@@ -30,237 +30,249 @@
 
 
 
+
+
     ]]>
 
-    <TextView
-        android:id="@+id/currentBirthInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_medium"
-        android:gravity="center"
-        android:text="@string/current_birth_information"
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.044" />
-
-    <LinearLayout
-        android:id="@+id/fillbar1"
-        android:layout_width="300dp"
-        android:layout_height="5dp"
-        android:background="@color/white"
-        android:backgroundTint="@color/yellow"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/currentBirthInfo"
-        app:layout_constraintVertical_bias="0.033">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/fillstatus1"
-            android:layout_width="135dp"
-            android:layout_height="match_parent"
-            android:background="@color/skyBlue"
-            android:backgroundTint="@color/skyBlue"
-            android:orientation="vertical" />
-    </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/scrollView1"
-        android:layout_width="387dp"
-        android:layout_height="756dp"
-        android:layout_marginTop="87dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/currBirthQ1Opt2"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="388dp"
-            android:layout_marginEnd="92dp"
-            android:text="@string/no"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:orientation="vertical" >
 
-        <com.google.android.material.button.MaterialButtonToggleGroup
-            android:id="@+id/doulaQ1Buttons"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/doulaQ2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/doulaQ1"
-            app:layout_constraintVertical_bias="0.45"
-            app:singleSelection="true">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scrollView1"
+                android:layout_width="387dp"
+                android:layout_height="756dp"
+                tools:layout_editor_absoluteY="87dp">
 
-        </com.google.android.material.button.MaterialButtonToggleGroup>
+                <TextView
+                    android:id="@+id/currentBirthInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="@string/current_birth_information"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/birthday"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="@string/birthdate"
-            android:inputType="date"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout
+                    android:id="@+id/fillbar1"
+                    android:layout_width="300dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="71dp"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/yellow"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-        <Spinner
-            android:id="@+id/plannedBirthLocationSpinner"
-            android:layout_width="160dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="72dp"
-            android:entries="@array/planned_birth_locations"
-            android:prompt="@string/birth_location"
-            android:spinnerMode="dialog"
-            android:textColor="#000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout
+                        android:id="@+id/fillstatus1"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/skyBlue"
+                        android:backgroundTint="@color/skyBlue"
+                        android:orientation="vertical" />
 
-        <EditText
-            android:id="@+id/if_other"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="119dp"
-            android:ems="10"
-            android:hint="@string/ifOther"
-            android:inputType="textPersonName"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
 
-        <TextView
-            android:id="@+id/birth_type_label"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="42dp"
-            android:layout_marginTop="200dp"
-            android:text="@string/birthType"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/currBirthQ1Opt2"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="448dp"
+                    android:layout_marginEnd="112dp"
+                    android:text="@string/no"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <RadioGroup
-            android:layout_width="151dp"
-            android:layout_height="89dp"
-            android:layout_marginStart="67dp"
-            android:layout_marginTop="235dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/doulaQ1Buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/doulaQ2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/doulaQ1"
+                    app:layout_constraintVertical_bias="0.45"
+                    app:singleSelection="true">
 
-            <RadioButton
-                android:id="@+id/singleton"
-                android:layout_width="match_parent"
-                android:layout_height="28dp"
-                android:text="@string/singleton" />
+                </com.google.android.material.button.MaterialButtonToggleGroup>
 
-            <RadioButton
-                android:id="@+id/twins"
-                android:layout_width="match_parent"
-                android:layout_height="29dp"
-                android:text="@string/twins"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="116dp"
+                    android:ems="10"
+                    android:hint="@string/birthdate"
+                    android:inputType="date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.482"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <RadioButton
-                android:id="@+id/three_or_more"
-                android:layout_width="match_parent"
-                android:layout_height="29dp"
-                android:text="@string/three_or_more" />
-        </RadioGroup>
+                <Spinner
+                    android:id="@+id/plannedBirthLocationSpinner"
+                    android:layout_width="160dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="164dp"
+                    android:entries="@array/planned_birth_locations"
+                    android:prompt="@string/birth_location"
+                    android:spinnerMode="dialog"
+                    android:textColor="#000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.488"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/current_birth_q1"
-            android:layout_width="273dp"
-            android:layout_height="33dp"
-            android:layout_marginTop="342dp"
-            android:text="@string/current_birth_q1"
-            android:textColor="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <EditText
+                    android:id="@+id/if_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:ems="10"
+                    android:hint="@string/ifOther"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/currBirthQ2Opt1"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="92dp"
-            android:layout_marginTop="508dp"
-            android:text="@string/yes"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/birth_type_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="272dp"
+                    android:text="@string/birthType"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/currBirthQ1Opt1"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="88dp"
-            android:layout_marginTop="388dp"
-            android:text="@string/yes"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <RadioGroup
+                    android:layout_width="149dp"
+                    android:layout_height="95dp"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="308dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/currBirthQ2Opt2"
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="508dp"
-            android:layout_marginEnd="88dp"
-            android:text="@string/no"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                    <RadioButton
+                        android:id="@+id/singleton"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:text="@string/singleton" />
 
-        <TextView
-            android:id="@+id/current_birth_q2"
-            android:layout_width="277dp"
-            android:layout_height="37dp"
-            android:layout_marginStart="42dp"
-            android:layout_marginTop="450dp"
-            android:text="@string/current_birth_q2"
-            android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                    <RadioButton
+                        android:id="@+id/twins"
+                        android:layout_width="match_parent"
+                        android:layout_height="29dp"
+                        android:text="@string/twins"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/next_button_cur_birth_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="581dp"
-            android:layout_marginEnd="48dp"
-            android:text="@string/next"
-            app:backgroundTint="@color/yellow"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                    <RadioButton
+                        android:id="@+id/three_or_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="29dp"
+                        android:text="@string/three_or_more" />
+                </RadioGroup>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/prev_button_cur_birth_info"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="59dp"
-            android:layout_marginTop="581dp"
-            android:text="@string/prev"
-            app:backgroundTint="@color/emoryBlue"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/current_birth_q1"
+                    android:layout_width="273dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="404dp"
+                    android:text="@string/current_birth_q1"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.35"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/currBirthQ2Opt1"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="564dp"
+                    android:text="@string/yes"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/currBirthQ1Opt1"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="448dp"
+                    android:text="@string/yes"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/currBirthQ2Opt2"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="564dp"
+                    android:layout_marginEnd="112dp"
+                    android:text="@string/no"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/current_birth_q2"
+                    android:layout_width="277dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="512dp"
+                    android:text="@string/current_birth_q2"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/next_button_cur_birth_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="636dp"
+                    android:layout_marginEnd="56dp"
+                    android:text="@string/next"
+                    app:backgroundTint="@color/yellow"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/prev_button_cur_birth_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="636dp"
+                    android:text="@string/prev"
+                    app:backgroundTint="@color/emoryBlue"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 
     <!--        app:layout_constraintBottom_toTopOf="@+id/doulaQ1"-->
