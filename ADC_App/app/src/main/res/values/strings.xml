@@ -25,6 +25,15 @@
     <string name="current_birth_q1">Are you planning to have/do you want to have an epidural?</string>
     <string name="current_birth_q2">Are you expecting to have a cesarean sections (C-section)?</string>
 
+    <!-- PREVIOUS BIRTH INFO PAGE -->
+    <string name="previous_birth_info">Previous Birth Information</string>
+    <string name="prev_births_1">Number of Previous Births: </string>
+    <string name="prev_births_2">Were any of your previous births: </string>
+    <string name="preterm">Preterm (less than 37 weeks gestation)</string>
+    <string name="low_birth_weight">Low Birth Weight (less than 5lbs 8oz)</string>
+    <string name="previous_birth_types">Previous Birth Types (check all that apply)</string>
+    <string name="previous_twins_triplets">Have you previously had twins or triplets?</string>
+
     <!--    PHOTO RELEASE PAGE-->
     <string name="photo_release">Photo Release</string>
     <string name="photo_release_t1">Please read the following statements:</string>
