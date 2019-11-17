@@ -141,28 +141,23 @@
         android:id="@+id/prev_button_doulaQ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
         android:text="@string/prev"
         app:backgroundTint="@color/emoryBlue"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/doulaQ2Buttons"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/next_button_doulaQ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
         android:text="@string/next"
         app:backgroundTint="@color/yellow"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toEndOf="@+id/prev_button_doulaQ"
-        app:layout_constraintTop_toBottomOf="@+id/doulaQ2Buttons"
-        app:layout_constraintVertical_bias="0.733" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/prev_button_doulaQ" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
