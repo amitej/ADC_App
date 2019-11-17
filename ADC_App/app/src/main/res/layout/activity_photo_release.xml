@@ -116,27 +116,23 @@
         android:id="@+id/prev_button_photo_release"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
         android:text="@string/prev"
         app:backgroundTint="@color/emoryBlue"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/photo_release_checkBox"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/finish_button_photo_release"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
         android:text="@string/finish"
         app:backgroundTint="@color/yellow"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/prev_button_photo_release"
-        app:layout_constraintTop_toBottomOf="@+id/photo_release_checkBox"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/prev_button_photo_release" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
