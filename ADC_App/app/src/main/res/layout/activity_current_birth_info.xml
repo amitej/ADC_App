@@ -45,7 +45,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/scrollView1"
-                android:layout_width="387dp"
+                android:layout_width="381dp"
                 android:layout_height="756dp"
                 tools:layout_editor_absoluteY="87dp">
 
