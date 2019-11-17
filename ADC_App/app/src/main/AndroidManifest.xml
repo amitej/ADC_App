@@ -23,6 +23,8 @@
         <activity
             android:name=".DoulaQuestionsActivity"
             android:label="Request a Doula" />
+        <activity android:name=".RequestSent" />
+        <activity android:name=".InformationConfirmation" />
 
         <meta-data
             android:name="preloaded_fonts"
