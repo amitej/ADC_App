@@ -10,6 +10,7 @@ import com.google.android.material.button.MaterialButton;
 public class DoulaQuestionsActivity extends AppCompatActivity {
 
     private MaterialButton prevButton;
+    private MaterialButton nextButton;
 
 
     @Override
@@ -19,10 +20,18 @@ public class DoulaQuestionsActivity extends AppCompatActivity {
 
         prevButton = findViewById(R.id.prev_button_doulaQ);
         prevButton.setOnClickListener(view -> openCurrentBirthInfoActivity());
+
+        nextButton = findViewById(R.id.next_button_doulaQ);
+        nextButton.setOnClickListener(view -> openPhotoReleaseActivity());
     }
 
     private void openCurrentBirthInfoActivity() {
         Intent intent = new Intent(this, CurrentBirthInfoActivity.class);
+        startActivity(intent);
+    }
+
+    private void openPhotoReleaseActivity() {
+        Intent intent = new Intent(this, PhotoReleaseActivity.class);
         startActivity(intent);
     }
 }

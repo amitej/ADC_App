@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CurrentBirthInfoActivity"></activity>
+        <activity android:name=".PhotoReleaseActivity"></activity>
+        <activity android:name=".CurrentBirthInfoActivity" />
         <activity
             android:name=".MainActivity"
             android:label="Home">
@@ -21,7 +22,7 @@
         </activity>
         <activity
             android:name=".DoulaQuestionsActivity"
-            android:label="Request a Doula"></activity>
+            android:label="Request a Doula" />
 
         <meta-data
             android:name="preloaded_fonts"
