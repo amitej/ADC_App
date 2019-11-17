@@ -24,9 +24,16 @@ public class PhotoReleaseActivity extends AppCompatActivity {
         finishButton.setOnClickListener(view -> openMainActivity());
     }
 
+    @Override
+    public void onBackPressed() {
+        openDoulaQuestionsActivity();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
     private void openDoulaQuestionsActivity() {
         Intent intent = new Intent(this, DoulaQuestionsActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     private void openMainActivity() {

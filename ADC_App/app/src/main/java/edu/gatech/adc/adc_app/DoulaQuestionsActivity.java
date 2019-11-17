@@ -25,9 +25,16 @@ public class DoulaQuestionsActivity extends AppCompatActivity {
         nextButton.setOnClickListener(view -> openPhotoReleaseActivity());
     }
 
+    @Override
+    public void onBackPressed() {
+        openCurrentBirthInfoActivity();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
+
     private void openCurrentBirthInfoActivity() {
         Intent intent = new Intent(this, CurrentBirthInfoActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     private void openPhotoReleaseActivity() {
