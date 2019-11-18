@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name ="planned_birth_locations">
+        <item>Grady</item>
+        <item>Emory Decatur</item>
+        <item>Northside</item>
+        <item>A birthing center</item>
+        <item>At home</item>
+        <item>No Plans</item>
+        <item>Other (see below)</item>
+    </string-array>
+
+    <string-array name ="number_of_previous_births">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+
+</resources>

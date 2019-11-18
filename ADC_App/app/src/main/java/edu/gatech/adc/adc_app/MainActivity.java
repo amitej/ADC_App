@@ -21,8 +21,15 @@ public class MainActivity extends AppCompatActivity {
         requestDoula.setOnClickListener(view -> openDoulaQuestionsActivity());
     }
 
+//    private void openDoulaQuestionsActivity() {
+//        Intent intent = new Intent(this, DoulaQuestionsActivity.class);
+//        startActivity(intent);
+//    }
+
+    // only adding this to see what my page looks like on the phone
+    // TODO: get rid of this later
     private void openDoulaQuestionsActivity() {
-        Intent intent = new Intent(this, DoulaQuestionsActivity.class);
+        Intent intent = new Intent(this, InformationConfirmation.class);
         startActivity(intent);
     }
 }
