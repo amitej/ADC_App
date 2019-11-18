@@ -51,14 +51,14 @@
     <string name="review_and_submit">Review and Submit</string>
     <string name="name">Name:</string>
     <string name="birthday">Birthday:</string>
-<!--    <string name="phone">Phone:</string>-->
+    <!--    <string name="phone">Phone:</string>-->
     <string name="personal_information">Personal Information</string>
-<!--    <string name="phone_2_optional">Phone 2 (Optional):</string>-->
-<!--    <string name="phone_2_optional">Phone 2 (Optional):</string>-->
-<!--    <string name="phone">Phone:</string>-->
+    <!--    <string name="phone_2_optional">Phone 2 (Optional):</string>-->
+    <!--    <string name="phone_2_optional">Phone 2 (Optional):</string>-->
+    <!--    <string name="phone">Phone:</string>-->
     <string name="phone_2_optional">Phone 2 (Optional):</string>
-<!--    <string name="relationship">Relationship:</string>-->
-<!--    <string name="relationship">Relationship:</string>-->
+    <!--    <string name="relationship">Relationship:</string>-->
+    <!--    <string name="relationship">Relationship:</string>-->
     <string name="phone">Phone:</string>
     <string name="emergency_contacts">Emergency Contacts</string>
     <string name="previous_birth_information">Previous Birth Information</string>
@@ -72,6 +72,11 @@
     <string name="emory_university_logo">Emory University Logo</string>
     <string name="log_in">LOG IN</string>
     <string name="learn_more">Learn More</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
 
 
 </resources>
