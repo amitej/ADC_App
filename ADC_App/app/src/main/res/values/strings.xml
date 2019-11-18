@@ -68,6 +68,10 @@
     <string name="planned_birth_location">Planned Birth Location:</string>
     <string name="birth_type">Birth Type:</string>
     <string name="relationship">relationship</string>
+    <string name="atlanta_doula_connect">Atlanta Doula Connect</string>
+    <string name="emory_university_logo">Emory University Logo</string>
+    <string name="log_in">LOG IN</string>
+    <string name="learn_more">Learn More</string>
 
 
 </resources>
