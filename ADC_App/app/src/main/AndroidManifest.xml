@@ -9,21 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".PersonalInfo"></activity>
         <activity
             android:name=".MainActivity"
             android:label="Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".DoulaQuestionsActivity"
-            android:label="Request a Doula">
-
-        </activity>
+            android:label="Request a Doula"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalInfo">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="@string/personal_info"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="5dp"
+        android:progress="25"
+        android:progressBackgroundTint="@color/yellow"
+        android:progressTint="@color/mediumBlue"
+        app:layout_constraintBottom_toTopOf="@id/name_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/fillbar"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="5dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:background="@color/white"-->
+<!--        android:backgroundTint="@color/yellow"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/name_input"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/fillstatus"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/title"-->
+<!--        app:layout_constraintVertical_bias="0.05" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/fillstatus"-->
+<!--        android:layout_width="240dp"-->
+<!--        android:layout_height="5dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:background="@color/skyBlue"-->
+<!--        android:backgroundTint="@color/skyBlue"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/name_input"-->
+<!--        app:layout_constraintRight_toLeftOf="@+id/fillbar"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="match_parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/title"-->
+<!--        app:layout_constraintVertical_bias="0.05" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/bday_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bday_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Birthday (MM/DD/YYYY)"
+        app:layout_constraintBottom_toTopOf="@+id/phone1_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_input" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone1_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        app:layout_constraintBottom_toTopOf="@+id/phone2_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bday_input" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone2_input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone 2 (Optional)"
+        app:layout_constraintBottom_toTopOf="@+id/nav_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone1_input" />
+
+
+    <LinearLayout
+        android:id="@+id/nav_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/prev_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/prev"
+            app:backgroundTint="@color/emoryBlue" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/next"
+            android:layout_marginStart="10dp"
+            app:backgroundTint="@color/yellow" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
