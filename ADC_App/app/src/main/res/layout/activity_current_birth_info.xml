@@ -25,9 +25,84 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/scrollView1"
-                android:layout_width="381dp"
+                android:layout_width="match_parent"
                 android:layout_height="756dp"
                 tools:layout_editor_absoluteY="87dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/currBirthQ2Opt2"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="184dp"
+                    android:layout_marginTop="568dp"
+                    android:text="@string/no"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/currBirthQ2Opt1"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="568dp"
+                    android:text="@string/yes"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/currBirthQ1Opt2"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="187dp"
+                    android:layout_marginTop="448dp"
+                    android:text="@string/no"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/currBirthQ1Opt1"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="99dp"
+                    android:layout_marginTop="448dp"
+                    android:text="@string/yes"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/nav_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/prev_button_cur_birth_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/prev"
+                        app:backgroundTint="@color/emoryBlue" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/next_button_cur_birth_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/next"
+                        app:backgroundTint="@color/yellow" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/currentBirthInfo"
@@ -66,17 +141,6 @@
                         android:orientation="vertical" />
 
                 </LinearLayout>
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/currBirthQ1Opt2"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="448dp"
-                    android:layout_marginEnd="112dp"
-                    android:text="@string/no"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
 
                 <com.google.android.material.button.MaterialButtonToggleGroup
                     android:id="@+id/doulaQ1Buttons"
@@ -183,39 +247,6 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/currBirthQ2Opt1"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="88dp"
-                    android:layout_marginTop="564dp"
-                    android:text="@string/yes"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/currBirthQ1Opt1"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="84dp"
-                    android:layout_marginTop="448dp"
-                    android:text="@string/yes"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/currBirthQ2Opt2"
-                    style="?attr/materialButtonOutlinedStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="564dp"
-                    android:layout_marginEnd="112dp"
-                    android:text="@string/no"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
                 <TextView
                     android:id="@+id/current_birth_q2"
                     android:layout_width="277dp"
@@ -224,28 +255,6 @@
                     android:layout_marginTop="512dp"
                     android:text="@string/current_birth_q2"
                     android:textColor="@color/black"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/next_button_cur_birth_info"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="636dp"
-                    android:layout_marginEnd="56dp"
-                    android:text="@string/next"
-                    app:backgroundTint="@color/yellow"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/prev_button_cur_birth_info"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="56dp"
-                    android:layout_marginTop="636dp"
-                    android:text="@string/prev"
-                    app:backgroundTint="@color/emoryBlue"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
