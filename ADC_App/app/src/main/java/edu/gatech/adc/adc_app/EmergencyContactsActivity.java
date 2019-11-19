@@ -1,22 +1,25 @@
 package edu.gatech.adc.adc_app;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.button.MaterialButton;
 
-public class EmergencyContactsActivity extends Activity {
+public class EmergencyContactsActivity extends AppCompatActivity {
+    private MaterialButton prevButton;
+    private MaterialButton nextButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency_contacts);
 
-        MaterialButton nextButton = findViewById(R.id.next_button);
+        nextButton = findViewById(R.id.next_button);
         nextButton.setOnClickListener(view -> openCurrentBirthInfoActivity());
 
-        MaterialButton prevButton = findViewById(R.id.prev_button);
+        prevButton = findViewById(R.id.prev_button);
         prevButton.setOnClickListener(view -> openPersonalInfoActivity());
     }
 
