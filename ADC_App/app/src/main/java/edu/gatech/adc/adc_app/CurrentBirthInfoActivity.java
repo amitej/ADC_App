@@ -27,12 +27,12 @@ public class CurrentBirthInfoActivity extends AppCompatActivity  {
         //String location = birthLocations.getSelectedItem().toString();
 
         MaterialButton prevButton = findViewById(R.id.prev_button_cur_birth_info);
-        prevButton.setOnClickListener(view -> openPersonalInfoActivity());
+        prevButton.setOnClickListener(view -> openEmergencyContactActivity());
     }
 
     @Override
     public void onBackPressed() {
-        openPersonalInfoActivity();
+        openEmergencyContactActivity();
     }
 
     private void openPreviousBirthInfoActivity() {
@@ -40,8 +40,8 @@ public class CurrentBirthInfoActivity extends AppCompatActivity  {
         startActivity(intent);
     }
 
-    private void openPersonalInfoActivity () {
-        Intent intent = new Intent(this, PersonalInfoActivity.class);
+    private void openEmergencyContactActivity () {
+        Intent intent = new Intent(this, EmergencyContactsActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
