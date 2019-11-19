@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import com.google.android.material.button.MaterialButton;
 
@@ -17,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        requestDoula = findViewById(R.id.request_doula_button);
+        requestDoula = findViewById(R.id.apply_as_doula_button);
         requestDoula.setOnClickListener(view -> openDoulaQuestionsActivity());
     }
 

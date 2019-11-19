@@ -9,14 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmergencyContacts">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".PersonalInfoActivity" />
+        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".PersonalInfoActivity"></activity>
+        <activity android:name=".EmergencyContactsActivity"></activity>
         <activity android:name=".PhotoReleaseActivity" />
         <activity android:name=".CurrentBirthInfoActivity" />
         <activity

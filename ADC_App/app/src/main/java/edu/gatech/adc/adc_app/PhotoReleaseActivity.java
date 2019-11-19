@@ -10,7 +10,7 @@ import com.google.android.material.button.MaterialButton;
 public class PhotoReleaseActivity extends AppCompatActivity {
 
     private MaterialButton prevButton;
-    private MaterialButton finishButton;
+    private MaterialButton reviewAndSubmit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,8 @@ public class PhotoReleaseActivity extends AppCompatActivity {
         prevButton = findViewById(R.id.prev_button_photo_release);
         prevButton.setOnClickListener(view -> openDoulaQuestionsActivity());
 
-        finishButton = findViewById(R.id.finish_button_photo_release);
-        finishButton.setOnClickListener(view -> openMainActivity());
+        reviewAndSubmit = findViewById(R.id.reviewAndSubmit);
+        reviewAndSubmit.setOnClickListener(view -> openReviewAndSubmit());
     }
 
     @Override
@@ -36,8 +36,8 @@ public class PhotoReleaseActivity extends AppCompatActivity {
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
-    private void openMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
+    private void openReviewAndSubmit() {
+        Intent intent = new Intent(this, InformationConfirmation.class);
         startActivity(intent);
     }
 }
