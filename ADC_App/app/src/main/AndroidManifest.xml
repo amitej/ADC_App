@@ -9,20 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PersonalInfo"></activity>
-        <activity android:name=".PhotoReleaseActivity"></activity>
+        <activity android:name=".EmergencyContacts">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PersonalInfoActivity" />
+        <activity android:name=".PhotoReleaseActivity" />
         <activity android:name=".CurrentBirthInfoActivity" />
         <activity
             android:name=".MainActivity"
             android:label="Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".DoulaQuestionsActivity"
-            android:label="Request a Doula"></activity>
+            android:label="Request a Doula" />
         <activity android:name=".RequestSent" />
         <activity android:name=".InformationConfirmation" />
 
