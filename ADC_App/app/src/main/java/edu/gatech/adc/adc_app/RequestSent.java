@@ -25,5 +25,9 @@ public class RequestSent extends AppCompatActivity {
         returnHome.setOnClickListener(view -> openMainActivity());
     }
 
+    @Override
+    public void onBackPressed() {
+        return;
+    }
 
 }

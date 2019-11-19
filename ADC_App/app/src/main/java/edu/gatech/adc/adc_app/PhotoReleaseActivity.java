@@ -27,7 +27,6 @@ public class PhotoReleaseActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         openDoulaQuestionsActivity();
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     private void openDoulaQuestionsActivity() {

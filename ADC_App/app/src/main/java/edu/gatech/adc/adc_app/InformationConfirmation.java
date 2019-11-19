@@ -9,23 +9,24 @@ import com.google.android.material.button.MaterialButton;
 
 public class InformationConfirmation extends AppCompatActivity {
 
-    private MaterialButton submit;
-    private MaterialButton edit;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information_confirmation);
 
 
-        submit = findViewById(R.id.submit);
+        MaterialButton submit = findViewById(R.id.submit);
         submit.setOnClickListener(view -> openRequestSent());
 
- /*
-       edit = findViewById(R.id.edit);
+        MaterialButton edit = findViewById(R.id.edit);
         edit.setOnClickListener(view -> openPersonalInfo());
-*/
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(this, PhotoReleaseActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     private void openRequestSent() {
@@ -33,9 +34,10 @@ public class InformationConfirmation extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    private void openPersonalInfo() {
-//        Intent intent = new Intent(this, RequestSent.class);
-//        startActivity(intent);
-//    }
+    private void openPersonalInfo() {
+        Intent intent = new Intent(this, PersonalInfoActivity.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+    }
 
 }

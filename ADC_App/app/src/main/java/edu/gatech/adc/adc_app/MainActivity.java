@@ -9,26 +9,17 @@ import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    private MaterialButton requestDoula;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        requestDoula = findViewById(R.id.apply_as_doula_button);
-        requestDoula.setOnClickListener(view -> openDoulaQuestionsActivity());
+        MaterialButton requestDoulaButton = findViewById(R.id.request_doula_button);
+        requestDoulaButton.setOnClickListener(view -> openSignUpActivity());
     }
 
-//    private void openDoulaQuestionsActivity() {
-//        Intent intent = new Intent(this, DoulaQuestionsActivity.class);
-//        startActivity(intent);
-//    }
-
-    // only adding this to see what my page looks like on the phone
-    // TODO: get rid of this later
-    private void openDoulaQuestionsActivity() {
-        Intent intent = new Intent(this, InformationConfirmation.class);
+    private void openSignUpActivity() {
+        Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
 }

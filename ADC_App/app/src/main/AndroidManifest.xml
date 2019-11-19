@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SignUpActivity"></activity>
-        <activity android:name=".PersonalInfoActivity"></activity>
-        <activity android:name=".EmergencyContactsActivity"></activity>
+        <activity android:name=".SignUpActivity"/>
+        <activity android:name=".PersonalInfoActivity"/>
+        <activity android:name=".EmergencyContactsActivity"/>
         <activity android:name=".PhotoReleaseActivity" />
         <activity android:name=".CurrentBirthInfoActivity" />
         <activity
@@ -28,6 +28,7 @@
             android:label="Request a Doula" />
         <activity android:name=".RequestSent" />
         <activity android:name=".InformationConfirmation" />
+        <activity android:name=".PreviousBirthInfoActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

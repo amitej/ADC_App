@@ -9,30 +9,26 @@ import com.google.android.material.button.MaterialButton;
 
 public class DoulaQuestionsActivity extends AppCompatActivity {
 
-    private MaterialButton prevButton;
-    private MaterialButton nextButton;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doula_questions);
 
-        prevButton = findViewById(R.id.prev_button_doulaQ);
-        prevButton.setOnClickListener(view -> openCurrentBirthInfoActivity());
+        MaterialButton prevButton = findViewById(R.id.prev_button_doulaQ);
+        prevButton.setOnClickListener(view -> openPreviousBirthInfoActivity());
 
-        nextButton = findViewById(R.id.next_button_doulaQ);
+        MaterialButton nextButton = findViewById(R.id.next_button_doulaQ);
         nextButton.setOnClickListener(view -> openPhotoReleaseActivity());
     }
 
     @Override
     public void onBackPressed() {
-        openCurrentBirthInfoActivity();
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+        openPreviousBirthInfoActivity();
     }
 
-    private void openCurrentBirthInfoActivity() {
-        Intent intent = new Intent(this, CurrentBirthInfoActivity.class);
+    private void openPreviousBirthInfoActivity() {
+        Intent intent = new Intent(this, PreviousBirthInfoActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }

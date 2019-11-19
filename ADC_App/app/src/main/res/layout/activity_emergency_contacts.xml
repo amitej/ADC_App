@@ -43,7 +43,7 @@
 
                 <LinearLayout
                     android:id="@+id/fillstatus"
-                    android:layout_width="135dp"
+                    android:layout_width="60dp"
                     android:layout_height="match_parent"
                     android:background="@color/skyBlue"
                     android:backgroundTint="@color/skyBlue"
