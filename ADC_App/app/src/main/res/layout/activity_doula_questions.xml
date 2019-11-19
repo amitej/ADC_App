@@ -97,14 +97,16 @@
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/yes" />
+            android:text="@string/yes"
+            android:textColor="@color/mediumBlue" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/doulaQ1Opt2"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/no" />
+            android:text="@string/no"
+            android:textColor="@color/mediumBlue" />
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
 
@@ -125,14 +127,16 @@
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/yes" />
+            android:text="@string/yes"
+            android:textColor="@color/mediumBlue" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/doulaQ2Opt2"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/no" />
+            android:text="@string/no"
+            android:textColor="@color/mediumBlue" />
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
 
